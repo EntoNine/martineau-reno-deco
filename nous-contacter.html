@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title data-i18n="title.contact"></title>
 </head>
 <body>
     <div class="navbar-section">
@@ -302,7 +303,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     submitButton.disabled = true;
     submitButton.innerHTML = '<span>' + (typeof t === 'function' ? t('contact.sending') : 'Envoi en cours...') + '</span>';
 
-    const googleScriptUrl = "/.netlify/functions/submit-contact";
+    const googleScriptUrl = "https://script.google.com/macros/s/AKfycbznQ1J0OCSL4MNamcXAkLmJO63IvY4H99r93AfeIWUhK_ShZ5BJViGcUxmLeJNzWiMnyg/exec";
     
     const formData = new FormData(this);
     

@@ -1,5 +1,12 @@
 {
   "fr": {
+    "title": {
+      "index": "Martineau Réno-Déco | Charpente à Rawdon, Lanaudière & Les Laurentides",
+      "services": "Nos services de charpente sur mesure à Rawdon",
+      "about": "L'expertise de la charpente à Rawdon",
+      "contact": "Nous contacter - Martineau Réno-Déco",
+      "submission": "Demandez votre soumission personnalisée - Martineau Réno-Déco"
+    },
     "nav": {
       "home": "Accueil",
       "services": "Nos services",
@@ -186,6 +193,15 @@
     }
   },
   "en": {
+    
+    "title": {
+      "index": "Martineau Réno-Déco | Framing in Rawdon, Lanaudière & The Laurentians",
+      "services": "Our Custom Framing Services in Rawdon",
+      "about": "Framing Expertise in Rawdon",
+      "contact": "Contact Us - Martineau Réno-Déco",
+      "submission": "Request Your Personalized Quote - Martineau Réno-Déco"
+    },
+
     "nav": {
       "home": "Home",
       "services": "Our services",

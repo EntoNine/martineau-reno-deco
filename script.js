@@ -173,3 +173,4 @@ function syncLanguagePicker() {
         mobilePicker.querySelector('.current-text').textContent = mobileTextMap[currentLang];
     }
 }
+
