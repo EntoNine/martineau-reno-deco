@@ -182,7 +182,7 @@ body {
 .navbar .bottom .links a.active,
 .navbar .bottom .links span.active {
     font-weight: 600;
-    background-color: #FFF;
+    background-color: #FFF !important;
     color: #000 !important; /* Force la couleur noire sur le texte principal */
 }
 
