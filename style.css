@@ -2570,130 +2570,10 @@ section .skill-card .bottom .single-card {
     z-index: 10000 !important;
 }
 
-
 /* ==========================================================================
    BANNIÈRE DE CONFIDENTIALITÉ DIRECTE (SANS COOKIES TRAÇANTS - LOI 25)
    ========================================================================== */
-.privacy-banner {
-    position: fixed;
-    bottom: -250px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% - 40px);
-    max-width: 850px;
-    background-color: #1a1a1a;
-    border: 1px solid #333;
-    border-radius: 12px;
-    padding: 24px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-    z-index: 99999999 !important;
-    transition: bottom 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-}
 
-.privacy-banner.show {
-    bottom: 24px;
-}
-
-.privacy-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-@media screen and (min-width: 768px) {
-    .privacy-container {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 32px;
-    }
-}
-
-.privacy-text h3 {
-    font-family: 'Lexend', sans-serif;
-    color: #FFF;
-    font-size: 1.1rem;
-    margin-bottom: 6px;
-}
-
-.privacy-text p {
-    color: #ccc;
-    font-size: 0.88rem;
-    line-height: 1.5;
-}
-
-.privacy-buttons {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-}
-
-@media screen and (max-width: 768px) {
-    .privacy-buttons {
-        width: 100%;
-        flex-direction: column;
-    }
-    .privacy-btn {
-        width: 100%;
-    }
-}
-
-.privacy-btn {
-    font-family: 'Lexend', sans-serif;
-    padding: 12px 24px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    border: none;
-    text-align: center;
-    white-space: nowrap;
-    text-decoration: none;
-}
-
-.privacy-btn.btn-primary {
-    background-color: var(--accent-color, #d08a44);
-    color: #FFF;
-}
-
-.privacy-btn.btn-primary:hover {
-    background-color: var(--accent-hover, #8e5828);
-}
-
-.privacy-btn.btn-secondary {
-    background-color: transparent;
-    color: #ccc;
-    border: 1px solid #444;
-}
-
-.privacy-btn.btn-secondary:hover {
-    background-color: #2a2a2a;
-    color: #FFF;
-}
-
-/* ==========================================================================
-   BANNIÈRE DE CONFIDENTIALITÉ DIRECTE (SANS COOKIES TRAÇANTS - LOI 25)
-   ========================================================================== */
-.privacy-banner {
-    position: fixed;
-    bottom: -250px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% - 40px);
-    max-width: 850px;
-    background-color: #1a1a1a;
-    border: 1px solid #333;
-    padding: 24px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-    z-index: 99999;
-    border-radius: 7px;
-    transition: bottom 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-.privacy-banner.show {
-    bottom: 24px;
-}
 
 .privacy-container {
     display: flex;
@@ -2793,7 +2673,7 @@ section .skill-card .bottom .single-card {
 
 @keyframes pixelScanMobile {
     0% {
-        transform: translateX(500px);
+        transform: translateY(-500px);
     }
     100% {
 
@@ -2813,3 +2693,39 @@ section .card img {
     }
 }
 
+/* ==========================================================================
+   BANNIÈRE DE CONFIDENTIALITÉ - ANIMATION FLUIDE & ÉLÉGANTE
+   ========================================================================== */
+.privacy-banner {
+    position: fixed;
+    bottom: 24px;                    /* Position finale */
+    left: 50%;
+    transform: translateX(-50%) translateY(120%); /* Départ : caché en bas */
+    opacity: 0;
+    
+    width: calc(100% - 40px);
+    max-width: 850px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    z-index: 99999;
+    border-radius: 7px;
+    
+    /* Transition douce et premium */
+    transition: 
+        transform 0.65s cubic-bezier(0.32, 0.72, 0, 1),
+        opacity 0.65s cubic-bezier(0.32, 0.72, 0, 1);
+    
+    will-change: transform, opacity;
+}
+
+.privacy-banner.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+/* Optionnel : petit délai pour un effet plus raffiné */
+.privacy-banner {
+    transition-delay: 0.1s;
+}
