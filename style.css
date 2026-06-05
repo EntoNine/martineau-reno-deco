@@ -13,6 +13,10 @@
     src: url(fonts/Lexend-VariableFont_wght.ttf);
 }
 
+@view-transition {
+    navigation: auto;
+}
+
 html {
   scroll-behavior: smooth;
 }
