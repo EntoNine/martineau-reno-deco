@@ -269,11 +269,17 @@ function setElementText(elementId, key) {
 
 function updateActiveNav() {
     const navLinks = document.querySelectorAll('.navbar .links a, .mobile-links a');
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const pathParts = window.location.pathname.split('/');
+    const currentPage = pathParts[pathParts.length - 1] || 'index.html';
 
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
-        if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+        if (!href) return;
+
+        // Extrait le nom de fichier du href en ignorant les ancres (#section)
+        const hrefPage = href.split('#')[0].split('/').pop() || 'index.html';
+
+        if (hrefPage === currentPage || (currentPage === '' && hrefPage === 'index.html')) {
             link.classList.add('active');
             link.classList.remove('not-active');
         } else {
