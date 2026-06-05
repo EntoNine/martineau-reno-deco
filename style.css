@@ -402,8 +402,9 @@ body {
 
 @media screen and (max-width: 800px) {
 
+
     .navbar-section {
-        position: sticky;
+        position: sticky !important;
         top: 0;
         z-index: 99;
     }
