@@ -47,11 +47,13 @@
 const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 
-hamburger.addEventListener('click', function(event) {
-    event.stopPropagation();
-    this.classList.toggle('is-active');
-    mobileMenu.classList.toggle('is-open');
-});
+if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', function(event) {
+        event.stopPropagation();
+        this.classList.toggle('is-active');
+        mobileMenu.classList.toggle('is-open');
+    });
+}
 
 // --- LOGIQUE DES DROPDOWNS MOBILES (Nos services & Langue) ---
 const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
@@ -174,3 +176,25 @@ function syncLanguagePicker() {
     }
 }
 
+// --- GESTION DE LA BANNIÈRE DE CONFIDENTIALITÉ LOI 25 ---
+document.addEventListener("DOMContentLoaded", () => {
+    const privacyBanner = document.getElementById("privacy-banner");
+    const closePrivacyBtn = document.getElementById("btn-close-privacy");
+
+    if (privacyBanner && closePrivacyBtn) {
+        // On réutilise le localStorage (déjà présent pour ta langue) pour mémoriser la fermeture
+        const hasAcknowledged = localStorage.getItem("privacyAcknowledged");
+
+        if (!hasAcknowledged) {
+            // Apparition élégante après 1.5 seconde
+            setTimeout(() => {
+                privacyBanner.classList.add("show");
+            }, 1500);
+        }
+
+        closePrivacyBtn.addEventListener("click", () => {
+            localStorage.setItem("privacyAcknowledged", "true");
+            privacyBanner.classList.remove("show");
+        });
+    }
+});

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="services.privacy_page_title">Politique de confidentialité - Martineau Réno-Déco</title>
+    <style>
+        body { font-family: 'Lexend', sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background-color: #f9f9f9; }
+        h1 { color: #1a1a1a; border-bottom: 2px solid #d08a44; padding-bottom: 10px; }
+        h2 { color: #d08a44; margin-top: 30px; font-size: 1.3rem; }
+        p, li { color: #555; font-size: 0.95rem; }
+        ul { padding-left: 20px; }
+        .contact-box { background: #fff; border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-top: 30px; border-left: 5px solid #d08a44; }
+        .privacy-top-controls {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    z-index: 9999; /* S'assure que ça passe par-dessus ton contenu */
+    font-family: inherit; /* S'adapte à ta typographie globale */
+}
+
+/* Style du bouton Retour */
+.privacy-top-controls .btn-retour {
+    background-color: #1a1a1a; /* À ajuster selon ta palette (ex: couleur accent) */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.privacy-top-controls .btn-retour:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+}
+
+/* Style du sélecteur de langue */
+.privacy-top-controls .lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.privacy-top-controls .lang-btn {
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.privacy-top-controls .lang-btn:hover {
+    color: #d9534f; /* Remplace par ta couleur primaire/hover */
+}
+
+.privacy-top-controls .separator {
+    color: #cccccc;
+    user-select: none;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+    .privacy-top-controls {
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .privacy-top-controls .btn-retour {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <h1 data-i18n="services.privacy_h1">Politique de confidentialité</h1>
+    <p data-i18n="services.privacy_last_updated"><strong>Dernière mise à jour :</strong> Juin 2026</p>
+    <p data-i18n="services.privacy_intro">Chez <strong>Martineau Réno-Déco</strong>, la protection de vos renseignements personnels est une priorité. Conformément à la Loi 25 au Québec, cette politique vous explique en toute transparence comment nous traitons vos données.</p>
+
+    <hr>
+
+    <h2 data-i18n="services.privacy_h2_1">1. Renseignements collectés</h2>
+    <p data-i18n="services.privacy_p_1">Lorsque vous utilisez nos formulaires (demande de soumission ou contact), nous collectons les informations suivantes :</p>
+    <ul>
+        <li data-i18n="services.privacy_li_1_1">Nom et prénom</li>
+        <li data-i18n="services.privacy_li_1_2">Numéro de téléphone</li>
+        <li data-i18n="services.privacy_li_1_3">Adresse courriel</li>
+        <li data-i18n="services.privacy_li_1_4">Adresse des travaux (si fournie)</li>
+        <li data-i18n="services.privacy_li_1_5">Détails et description de votre projet</li>
+    </ul>
+
+    <h2 data-i18n="services.privacy_h2_2">2. Utilisation et finalité des données</h2>
+    <p data-i18n="services.privacy_p_2">Nous utilisons vos renseignements uniquement pour des besoins d'affaires légitimes :</p>
+    <ul>
+        <li data-i18n="services.privacy_li_2_1">Analyser votre demande et préparer votre soumission de rénovation.</li>
+        <li data-i18n="services.privacy_li_2_2">Vous recontacter par courriel ou par téléphone pour faire le suivi du projet.</li>
+        <li data-i18n="services.privacy_li_2_3"><strong>Suivi à long terme :</strong> Nous conservons votre dossier client afin de pouvoir répondre efficacement à vos demandes futures si vous décidez de nous rappeler pour de nouveaux besoins ou des questions sur les travaux effectués.</li>
+    </ul>
+
+    <h2 data-i18n="services.privacy_h2_3">3. Technologies utilisées et sécurité</h2>
+    <p data-i18n="services.privacy_p_3_1">Pour assurer le fonctionnement de nos formulaires sans utiliser de serveurs tiers complexes, nous utilisons la technologie sécurisée de <strong>Google (Google Apps Script et Gmail)</strong>.</p>
+    <p data-i18n="services.privacy_p_3_2">Lorsque vous cliquez sur "Envoyer", vos données sont acheminées de manière sécurisée et cryptée via les outils Google directement vers notre boîte de courriel professionnelle. Vos informations ne sont jamais stockées dans une base de données publique ou vendues à des entreprises de publicité.</p>
+
+    <h2 data-i18n="services.privacy_h2_4">4. Partage des données</h2>
+    <p data-i18n="services.privacy_p_4"><strong>Aucun partage commercial :</strong> Vos renseignements personnels ne seront jamais vendus, loués ou partagés avec des tiers à des fins marketing. Ils restent strictement confidentiels au sein de Martineau Réno-Déco.</p>
+
+    <h2 data-i18n="services.privacy_h2_5">5. Durée de conservation</h2>
+    <p data-i18n="services.privacy_p_5">Nous conservons vos données aussi longtemps que nécessaire pour la réalisation des travaux et pour assurer un service après-vente de qualité (historique de votre dossier en cas de nouvel appel de votre part). Vous pouvez demander la suppression de vos données en tout temps.</p>
+
+    <h2 data-i18n="services.privacy_h2_6">6. Vos droits et responsable de la protection des données</h2>
+    <p data-i18n="services.privacy_p_6">En vertu de la Loi 25, vous avez le droit d'accéder à vos renseignements personnels, de les corriger, ou de demander leur suppression de nos dossiers.</p>
+    
+    <div class="contact-box">
+        <strong data-i18n="services.privacy_contact_title">Responsable de la protection des données :</strong><br>
+        <span data-i18n="services.privacy_contact_desc">Pour toute question ou pour faire valoir vos droits, contactez :</span><br>
+        • <span data-i18n="services.privacy_contact_role"><strong>Rôle :</strong> Responsable</span><br>
+        • <span data-i18n="services.privacy_contact_email"><strong>Courriel :</strong> martineaurenodeco2013@gmail.com</span><br>
+        • <span data-i18n="services.privacy_contact_phone"><strong>Téléphone :</strong> 514-892-4821</span>
+    </div>
+    <br>
+    <hr>
+    <p data-i18n="services.privacy_p_7">Ce site utilise des ressources graphiques et photographiques provenant des plateformes suivantes, sous leurs licences respectives (Creative Commons ou licences libres de droits) :
+
+    <br> Photographies : Unsplash, Pixabay
+
+    <br> Icônes : Flaticon</p>
+
+    <div class="privacy-top-controls">
+        <!-- Bouton Retour Accueil traduit dynamiquement -->
+        <a href="index.html" class="btn-retour" data-i18n="nav.home">Accueil</a>
+        
+        <!-- Sélecteur de langue -->
+        <div class="lang-switch">
+            <a href="#" data-lang="fr" data-flag="icons/qc.webp" class="lang-btn">FR</a>
+            <span class="separator">|</span>
+            <a href="#" data-lang="en" data-flag="icons/us.webp" class="lang-btn">EN</a>
+        </div>
+    </div>
+    
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
