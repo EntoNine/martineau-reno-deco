@@ -370,7 +370,7 @@ body {
       rgba(220, 223, 228, 0.815) 70%,
       rgb(206, 212, 218) 100%
     ),
-    url(icons/background-diamond-plate.png);
+    url(icons/background-diamond-plate.webp);
     
   background-size: cover;
   background-position: center; 
@@ -642,7 +642,7 @@ body {
       rgba(228, 231, 235, 0.8) 0%,
       rgba(220, 223, 228, 0.85) 100%
     ),
-    url(icons/background-diamond-plate.png);
+    url(icons/background-diamond-plate.webp);
   background-size: cover;
   background-position: center;
 }
@@ -724,7 +724,7 @@ body {
     font-family: var(--font-main);
     background-image: 
         linear-gradient(to right, rgba(167, 105, 48, 0.3) 0%, rgba(167, 105, 48, 1) 60%),
-        url('img/card-img-2.jpg');
+        url('img/card-img-2.webp');
     
     background-size: cover;
     background-position: left center;
@@ -982,12 +982,12 @@ section .skill-card .upper .center p {
 }
 
 section .skill-card .upper .first-img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(img/structure.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(img/structure.webp);
     background-size: cover;
 }
 
 section .skill-card .upper .second-img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(img/city.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(img/city.webp);
     background-size: cover;
 }
 
