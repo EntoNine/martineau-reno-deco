@@ -2586,7 +2586,7 @@ section .skill-card .bottom .single-card {
     border-radius: 12px;
     padding: 24px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-    z-index: 99999;
+    z-index: 99999999 !important;
     transition: bottom 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
@@ -2793,12 +2793,10 @@ section .skill-card .bottom .single-card {
 
 @keyframes pixelScanMobile {
     0% {
-        transform: translateX(300px);
+        transform: translateX(500px);
     }
     100% {
-        clip-path: inset(0 0 0 0);
-        filter: blur(0);
-        opacity: 1;
+
     }
 }
 /* Application sur l'image flottante du hero (desktop) */
