@@ -145,8 +145,8 @@ document.addEventListener('DOMContentLoaded', async function() {
 function syncLanguagePicker() {
     const currentLang = i18n.getCurrentLanguage();
     const flagMap = {
-        'fr': 'icons/qc.png',
-        'en': 'icons/us.png'
+        'fr': 'icons/qc.webp',
+        'en': 'icons/us.webp'
     };
     const textMap = {
         'fr': 'FR',

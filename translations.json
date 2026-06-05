@@ -7,6 +7,12 @@
       "contact": "Nous contacter - Martineau Réno-Déco",
       "submission": "Demandez votre soumission personnalisée - Martineau Réno-Déco"
     },
+    "service-quality": {
+      "pro": "Accompagnement",
+      "quality": "Qualité",
+      "reactivity": "Réactivité",
+      "seriousness": "Sérieux"
+    },
     "nav": {
       "home": "Accueil",
       "services": "Nos services",
@@ -193,13 +199,20 @@
     }
   },
   "en": {
-    
+
     "title": {
       "index": "Martineau Réno-Déco | Framing in Rawdon, Lanaudière & The Laurentians",
       "services": "Our Custom Framing Services in Rawdon",
       "about": "Framing Expertise in Rawdon",
       "contact": "Contact Us - Martineau Réno-Déco",
       "submission": "Request Your Personalized Quote - Martineau Réno-Déco"
+    },
+
+    "service-quality": {
+      "pro": "Accomplishment",
+      "quality": "Quality",
+      "reactivity": "Reactivity",
+      "seriousness": "Seriousness"
     },
 
     "nav": {
