@@ -230,7 +230,8 @@
       "popupprivacy-description": "Conformément à la Loi 25 du Québec, Martineau Réno-Déco s'engage à sécuriser les informations transmises via nos formulaires. Notre site web n'utilise aucun témoin (cookie) de suivi publicitaire ou analytique.",
       "popupprivacy-more": "En savoir plus",
       "popupprivacy-understood": "J'ai compris",
-      "privacy_p_7": "Ce site utilise des ressources graphiques et photographiques provenant des plateformes suivantes, sous leurs licences respectives (Creative Commons ou licences libres de droits) :<br><br> Photographies : Unsplash, Pixabay<br> Icônes : Flaticon"
+      "privacy_p_7": "Ce site utilise des ressources graphiques et photographiques provenant des plateformes suivantes, sous leurs licences respectives (Creative Commons ou licences libres de droits) :<br><br> Photographies : Unsplash, Pixabay<br> Icônes : Flaticon",
+      "dev": "Développé par Antoine Veillette-Jomphe"
     }
   },
   "en": {
@@ -467,7 +468,8 @@
       "popupprivacy-description": "In accordance with Quebec's Law 25, Martineau Réno-Déco is committed to securing the information transmitted via our forms. Our website does not use any advertising or analytical tracking cookies.",
       "popupprivacy-more": "Learn more",
       "popupprivacy-understood": "I understand",
-      "privacy_p_7": "This site uses graphic and photographic resources from the following platforms, under their respective licenses (Creative Commons or royalty-free licenses):<br><br> Photographs: Unsplash, Pixabay<br> Icons: Flaticon"
+      "privacy_p_7": "This site uses graphic and photographic resources from the following platforms, under their respective licenses (Creative Commons or royalty-free licenses):<br><br> Photographs: Unsplash, Pixabay<br> Icons: Flaticon",
+      "dev": "Developped by Antoine Veillette-Jomphe"
     }
   }
 }

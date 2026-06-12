@@ -13,10 +13,6 @@
     src: url(fonts/Lexend-VariableFont_wght.ttf);
 }
 
-@view-transition {
-    navigation: auto;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -1339,7 +1335,7 @@ section .skill-card .bottom .right a:hover {
 }
 
 
-.ruban-endroits {
+.ruban-endroits, .ruban-dev {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -1350,7 +1346,7 @@ section .skill-card .bottom .right a:hover {
 }
 
 @media screen and (max-width: 500px) {
-.ruban-endroits {
+.ruban-endroits .ruban-dev {
         display: flex;
         justify-content: center;
         width: 100%;
@@ -1364,7 +1360,7 @@ section .skill-card .bottom .right a:hover {
 
 
 @media screen and (max-width: 350px) {
-.ruban-endroits {
+.ruban-endroits .ruban-dev {
         display: flex;
         justify-content: center;
         width: 100%;
