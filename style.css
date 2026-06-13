@@ -46,7 +46,7 @@ footer .footer-bottom a {
 
 body {
    font-family: 'Noto Sans', sans-serif;
-   width: 100vw;
+   max-width: 100vw;
    overflow-x: hidden;
 }
 
@@ -2705,11 +2705,13 @@ section .card img {
 .privacy-banner {
     position: fixed;
     bottom: 24px;                    /* Position finale */
-    left: 50%;
-    transform: translateX(-50%) translateY(120%); /* Départ : caché en bas */
+    left: 20px;
+    right: 20px;
+    margin: 0 auto;
+    transform: translateY(120%); /* Départ : caché en bas */
     opacity: 0;
     
-    width: calc(100% - 40px);
+    width: auto;
     max-width: 850px;
     background-color: #1a1a1a;
     border: 1px solid #333;
@@ -2727,7 +2729,7 @@ section .card img {
 }
 
 .privacy-banner.show {
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
     opacity: 1;
 }
 
